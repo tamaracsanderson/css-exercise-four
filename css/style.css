@@ -1,4 +1,36 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+/* Made all capitalized */
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+/* Centered heading, capitalized */
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+}
+/* Added images */
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 16px;
+    /* Increased size */
+  column-count: 1
+  /* Made one column */
 }
+
+@media screen and (min-width: 575px) {
+  body {
+    column-count: 2;
+      /* Made two columns for tablets > 575 px */
+  }
+
+@media screen and (min-width: 991px) {
+  body {
+    column-count: 4;
+      /* Made four columns for laptops > 991px */
+  }
