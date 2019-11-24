@@ -4,6 +4,8 @@ h1 {
 /* Made all capitalized */
   font-size: 24px;
   padding-bottom: 50px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
 }
 /* Centered heading, capitalized */
 
@@ -23,14 +25,26 @@ body {
   /* Made one column */
 }
 
+.preview {
+  display: inline-block;
+}
+
 @media screen and (min-width: 575px) {
   body {
     column-count: 2;
       /* Made two columns for tablets > 575 px */
   }
+  img {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 991px) {
   body {
     column-count: 4;
       /* Made four columns for laptops > 991px */
   }
+  img {
+    width: 100%;
+  }
+}
